@@ -1,0 +1,169 @@
+% Contains a small list of 10 users using the terms user01, user02, ..., to user10.
+% These users include a list of 'friends' they have as part of a social network and three to six movies that
+% that have 'liked'.
+% As part of this Problem Set, you will be developing three recommendation predicates that take information known
+% by the system to produce a list of movie recommendations. 
+% @author Adam Gaweda (02/26/2023)
+% DO NOT MODIFY
+
+
+:-[movies]. % imports movies.pl
+
+% User 01
+user(user01).
+% User 01s Social Network
+friend_of(user01, user02).
+friend_of(user01, user04).
+friend_of(user01, user05).
+friend_of(user01, user06).
+friend_of(user01, user10).
+
+% User 01s Liked Movies
+liked(user01, crazy_stupid_love).
+liked(user01, frozen).
+liked(user01, inside_out).
+liked(user01, pitch_perfect).
+liked(user01, rock_of_ages).
+liked(user01, the_grand_budapest_hotel).
+
+% User 02
+user(user02).
+% User 02s Social Network
+friend_of(user02, user01).
+friend_of(user02, user03).
+friend_of(user02, user05).
+friend_of(user02, user07).
+
+% User 02s Liked Movies
+liked(user02, footloose).
+liked(user02, pitch_perfect).
+liked(user02, diary_of_a_wimpy_kid).
+liked(user02, frozen).
+
+% User 03
+user(user03).
+% User 03s Social Network
+friend_of(user03, user02).
+friend_of(user03, user04).
+friend_of(user03, user06).
+friend_of(user03, user07).
+friend_of(user03, user08).
+friend_of(user03, user10).
+
+% User 03s Liked Movies
+liked(user03, divergent).
+liked(user03, gone_girl).
+liked(user03, jack_reacher).
+liked(user03, prometheus).
+liked(user03, sleeping_beauty).
+
+% User 04
+user(user04).
+% User 04s Social Network
+friend_of(user04, user01).
+friend_of(user04, user03).
+friend_of(user04, user07).
+friend_of(user04, user08).
+
+% User 04s Liked Movies
+liked(user04, american_hustle).
+liked(user04, the_big_short).
+liked(user04, interstellar).
+liked(user04, inception).
+
+% User 05
+user(user05).
+% User 05s Social Network
+friend_of(user05, user01).
+friend_of(user05, user02).
+friend_of(user05, user06).
+friend_of(user05, user09).
+
+% User 05s Liked Movies
+liked(user05, the_hobbit_an_unexpected_journey).
+liked(user05, the_hobbit_the_battle_of_the_five_armies).
+liked(user05, the_hobbit_the_desolation_of_smaug).
+
+% User 06
+user(user06).
+% User 06s Social Network
+friend_of(user06, user01).
+friend_of(user06, user03).
+friend_of(user06, user05).
+friend_of(user06, user07).
+friend_of(user06, user09).
+friend_of(user06, user10).
+
+% User 06s Liked Movies
+liked(user06, avengers_age_of_ultron).
+liked(user06, the_avengers).
+liked(user06, scott_pilgrim_vs_the_world).
+liked(user06, mad_max_fury_road).
+liked(user06, guardians_of_the_galaxy).
+liked(user06, fantastic_four).
+
+% User 07
+user(user07).
+% User 07s Social Network
+friend_of(user07, user02).
+friend_of(user07, user03).
+friend_of(user07, user04).
+friend_of(user07, user06).
+friend_of(user07, user08).
+friend_of(user07, user10).
+
+% User 07s Liked Movies
+liked(user07, black_swan).
+liked(user07, crazy_stupid_love).
+liked(user07, frozen).
+liked(user07, gone_girl).
+liked(user07, melancholia).
+liked(user07, sleeping_beauty).
+liked(user07, the_hunger_games).
+
+% User 08
+user(user08).
+% User 08s Social Network
+friend_of(user08, user02).
+friend_of(user08, user03).
+friend_of(user08, user07).
+friend_of(user08, user10).
+
+% User 08s Liked Movies
+liked(user08, legend).
+liked(user08, the_big_short).
+liked(user08, the_imitation_game).
+liked(user08, the_social_network).
+liked(user08, the_wolf_of_wall_street).
+
+% User 09
+user(user09).
+% User 09s Social Network
+friend_of(user09, user01).
+friend_of(user09, user05).
+friend_of(user09, user06).
+friend_of(user09, user10).
+
+% User 09s Liked Movies
+liked(user09, ex_machina).
+liked(user09, her).
+liked(user09, the_big_short).
+liked(user09, the_imitation_game).
+liked(user09, the_kings_speech).
+liked(user09, the_wolf_of_wall_street).
+
+% User 10
+user(user10).
+% User 10s Social Network
+friend_of(user10, user01).
+friend_of(user10, user02).
+friend_of(user10, user06).
+friend_of(user10, user07).
+friend_of(user10, user08).
+friend_of(user10, user09).
+
+% User 10s Liked Movies
+liked(user10, margin_call).
+liked(user10, nightcrawler).
+liked(user10, skyfall).
+liked(user10, the_conjuring).
